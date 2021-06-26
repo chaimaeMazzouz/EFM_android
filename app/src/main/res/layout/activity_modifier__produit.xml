@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modifier_Produit"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/codeEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Id"/>
+    <EditText
+        android:id="@+id/disignationEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"/>
+    <EditText
+        android:id="@+id/prixUnitaireEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Montant"
+        android:inputType="numberDecimal"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type Operation"
+        android:id="@+id/TypeOp_M"
+        android:onClick="changeCheck"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rechercher"
+        android:onClick="rechercherProduit"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modifier"
+        android:onClick="modifierProduit"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:onClick="backToMenu"/>
+</LinearLayout>
